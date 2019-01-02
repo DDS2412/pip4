@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+  <div>
+
+  </div>
+</html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+
+
+      <form #myForm="ngForm" novalidate>
+        <div class="form-group">
+          <label>X</label>
+          <input class="form-control" id="x" maxlength="4" name="x" [(ngModel)]="newPoint.x"
+                 required/>
+        </div>
+        <div class="form-group">
+          <label>Y</label>
+          <input class="form-control" id="y" maxlength="8" name="Y" [(ngModel)]="newPoint.y"
+                 required/>
+        </div>
+        <div class="form-group">
+          <label>R</label>
+          <input class="form-control" id="r" maxlength="4" name="r"
+                 [(ngModel)]="newPoint.r" (change)="rchange()"
+                 required/>
+        </div>
+
+        <div class="form-group">
+          <button [disabled]="myForm.invalid"
+                  class="btn btn-default" (click)="onSubmit()">Добавить</button>
+        </div>
+      </form>
+
+    </div>
+    <div class="col-md-6">
+      <canvas (click)="clickGraphic($event)" #canvas></canvas>
+    </div>
+
+    <div>
+      <table>
+        <thead>
+        <tr>
+          <th>X</th>
+          <th>Y</th>
+          <th>R</th>
+          <th>Попадание</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let point of points">
+          <td>{{point.x}}</td>
+          <td>{{point.y}}</td>
+          <td>{{point.r}}</td>
+          <td>{{point.isHit ? 'Да' : 'Нет'}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,26 @@
+a {
+  float: left;
+  background: rgba(165, 172, 175, 0.2);
+  box-shadow: 0 2px 1px #2D2020;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  margin: 8px;
+  text-shadow: 0 1px 1px #2D2020;
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Change the background color on mouse-over */
+a:hover {
+  background-color: rgba(255, 182, 0, 0.6);
+  color: white;
+  transition: .5s;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  text-decoration: none;
+}
