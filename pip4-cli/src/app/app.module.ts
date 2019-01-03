@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +16,7 @@ import {FormsModule} from '@angular/forms';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import {AutoCompleteModule} from 'primeng/autocomplete';
 import {PointServiceService} from './services/point-service.service';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 const appRoutes:Routes = [
   {
@@ -33,7 +34,7 @@ const appRoutes:Routes = [
     AppComponent, CanvasComponent, HeaderComponent, LoginformComponent, MainpageComponent
   ],
   imports: [
-    BrowserModule, AutoCompleteModule,
+    BrowserModule, AutoCompleteModule, BrowserAnimationsModule,
     HttpClientModule, FormsModule, ScrollingModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes), CommonModule

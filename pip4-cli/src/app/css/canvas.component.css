@@ -5,6 +5,9 @@ canvas{
   margin: 20px;
 }
 
+input.ng-touched.ng-invalid {border:solid red 2px;}
+input.ng-touched.ng-valid {border:solid green 2px;}
+
 table {
   margin: 10px auto;
   font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
@@ -13,6 +16,10 @@ table {
   border-spacing: 0;
   text-align: center;
   box-shadow: 0 2px 2px #2D2020;
+}
+
+#auto-complete{
+  width: 2000px;
 }
 
 th {

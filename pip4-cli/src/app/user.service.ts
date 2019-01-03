@@ -12,7 +12,7 @@ export class UserService {
     this.isUserLoggedIn = false;
   }
 
-  setUserLoggedIn(){
+  setUserLoggedIn() {
     this.isUserLoggedIn = true;
   }
 

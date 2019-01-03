@@ -1,7 +1,7 @@
 import {Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
 import {Point} from '../models/point';
-import {NgForm} from '@angular/forms';
 import {PointServiceService} from '../services/point-service.service';
+import {NgForm, NgModel} from '@angular/forms';
 
 ;
 
@@ -11,6 +11,20 @@ import {PointServiceService} from '../services/point-service.service';
   styleUrls: ['./../css/canvas.component.css']
 })
 export class CanvasComponent implements OnInit {
+  x: string;
+  numbers: string[] = ['-2','-1.5','-1','-0.5','0','0.5','1','1.5','2'];
+  output: any[];
+
+  searchX(event) {
+    this.output = this.numbers.filter(c => c.includes(event.query));
+    this.newPoint.x = event.query;
+  }
+
+  searchR(event) {
+    this.output = this.numbers.filter(c => c.includes(event.query));
+    this.rchange(event.query);
+  }
+
   @ViewChild('canvas') public canvas: ElementRef;
 
   @Input() public width = 300;
@@ -59,10 +73,12 @@ export class CanvasComponent implements OnInit {
       });
   }
 
-  rchange() {
-    if (this.newPoint.r <= 0)
-      this.newPoint.r = 1;
-    let r = this.newPoint.r;
+  rchange(r: number) {
+    var regexp = new RegExp('^[0-2]{1}((.){1}(0|5)?)?\\s*$');
+    if(!regexp.test(r.toString())) {
+      r = 1;
+    }
+    this.newPoint.r = r;
     this.draw(r);
     this.redrawAllPoints(r);
   }
