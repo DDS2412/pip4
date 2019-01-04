@@ -19,39 +19,33 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-3 col-md-2 col-sm-0"></div>
-    <div class="col-lg-6 col-md-8 col-sm-12 log-form">
-      <h2 style="text-align: center">Вход</h2>
-      <form (submit)="loginUser($event)">
-        <div class="ulog-form">
+    <div class="col-lg-6 col-md-8 col-sm-12 reg-form">
+      <h2 style="text-align: center">Регистрация</h2>
+      <form name="register" #registerform="ngForm" [formGroup]="registerForm" (submit)="onSubmit()">
+        <div class="ureg-form">
           <div class="container">
             <div class="row">
               <div class="col">
                 <label>Имя пользователя:</label>
               </div>
               <div class="col">
-                <input type="text" required placeholder="Имя пользователя">
+                <input type="text" formControlName="login" required placeholder="Имя пользователя">
               </div>
               <div class="w-100"></div>
               <div class="col">
                 <label>Пароль:</label>
               </div>
               <div class="col">
-                <input type="password" required placeholder="Пароль">
-              </div>
-              <div class="w-100"></div>
-              <div class="col">
-                <div class="error-msg">
-                  <label>{{errorMsg}}</label>
-                </div>
+                <input type="password" formControlName="password" required placeholder="Пароль">
               </div>
             </div>
             <div class="row">
-              <div class="col" style="align-content: center; text-align: center">
-                <input type="submit" value="Войти">
+              <div class="col">
+                <input [disabled]="registerform.invalid" class="reg-btn" type="submit" value="Зарегистрироваться">
               </div>
               <div class="w-100"></div>
               <div class="col">
-                <a routerLink="/register">Регистрация</a>
+                <a routerLink="/">На главную страницу</a>
               </div>
             </div>
           </div>

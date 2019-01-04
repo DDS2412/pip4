@@ -1,0 +1,64 @@
+.reg-btn{
+  background: rgba(64, 207, 112, 0.5);
+  box-shadow: 0 1px 1px #2D2020;
+  align-content: center;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  margin: 8px;
+  text-shadow: 0 0.5px 0.5px #2D2020;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.reg-btn:hover{
+  background: rgba(64, 207, 112, 0.8);
+  color: white;
+  transition: .5s;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  text-decoration: none;
+}
+
+a {
+  background: rgba(165, 172, 175, 0.2);
+  box-shadow: 0 2px 1px #2D2020;
+  color: black;
+  text-align: center;
+  padding: 8px;
+  margin: 8px;
+  text-shadow: 0 1px 1px #2D2020;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 10px;
+}
+
+/* Change the background color on mouse-over */
+a:hover {
+  background-color: rgba(26, 22, 222, 1);
+  color: white;
+  transition: .5s;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  text-decoration: none;
+}
+
+.reg-form{
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  box-shadow: 0 2px 1px gray;
+  padding: 10px;
+  margin: 10px
+}
+
+.ureg-form{
+  margin: 10px;
+}

@@ -8,6 +8,33 @@ canvas{
 input.ng-touched.ng-invalid {border:solid red 2px;}
 input.ng-touched.ng-valid {border:solid green 2px;}
 
+button{
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 8px 20px;
+  transition: 0.5s linear;
+  text-align: center;
+  border: black;
+  border-radius: 10px;
+  background: rgba(165, 172, 175, 0.2);
+  box-shadow: 0 2px 1px #2D2020;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  text-shadow: 0 1px 1px #2D2020;
+  line-height: 25px;
+}
+
+button:hover{
+  background-color: rgba(5, 230, 80, 1);
+  color: white;
+  transition: .5s;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
 table {
   margin: 10px auto;
   font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
