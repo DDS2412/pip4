@@ -23,26 +23,26 @@
 
 
       <form #myForm="ngForm" novalidate>
-        <div>
+        <div class="form-div">
           <label>X: </label>
-          <p-autoComplete  [suggestions]="output" (completeMethod)="searchX($event)" [size]="6"
-                           pattern="^(-)?[0-2]{1}((\.){1}(0|5)?)?\s*$" name="x" id="x" ngModel
+          <p-autoComplete [(ngModel)]="newPoint.x" [suggestions]="output" (completeMethod)="searchX($event)" [size]="6"
+                           pattern="^(-)?[0-2]{1}((\.){1}(0|5)?)?\s*$" name="x" id="x"
                            required="true"  placeholder="X" [minLength]="1"></p-autoComplete>
         </div>
         <div [hidden]="myForm.controls.x.valid || myForm.controls.x.untouched" class="alert alert-danger">
           Пожалуйста, введите допустимые значения X!
         </div>
-        <div class="form-group">
-          <label>Y</label>
-          <input class="form-control" placeholder="(-3,3)" id="y" maxlength="8"
-                 name="Y" [(ngModel)]="newPoint.y"
-                 required pattern="^-?[0-2][.]?\d{0,5}\s*$" name="y"/>
+        <div class="form-div">
+          <label class="inp-label" for="y">Y:</label>
+          <input placeholder="(-3,3)" id="y" maxlength="8"
+                 name="y" [(ngModel)]="newPoint.y"
+                 required pattern="^-?[0-2][.]?\d{0,5}\s*$"/>
         </div>
         <div>
-          <div>
+          <div class="form-div">
             <label>R: </label>
             <p-autoComplete [(ngModel)]="r" [suggestions]="output" (completeMethod)="searchR($event)" [size]="6"
-                            pattern="^[0-2]{1}((\.){1}(0|5)?)?\s*$" name="r" id="r" ngModel
+                            pattern="^[1-2]{1}((\.){1}(0|5)?)?\s*$|^(0\.5)\s*$" name="r" id="r" ngModel
                             required="true" placeholder="R" [minLength]="1"></p-autoComplete>
           </div>
           <span style="margin-left:10px">Валидное значение R: {{newPoint.r||'none'}}</span>
@@ -51,7 +51,7 @@
           Пожалуйста, введите допустимые значения R!
         </div>
 
-        <div class="form-group">
+        <div class="form-group" style="margin: 10px;">
           <button [disabled]="myForm.invalid"
                   class="btn btn-default" (click)="onSubmit()">Добавить</button>
         </div>

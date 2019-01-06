@@ -19,7 +19,7 @@ public class PointService {
         return points;
     }
 
-    public void add(Point point) {
+    public void add(Point point, String login) {
         points.add(point.roundValues());
     }
 }

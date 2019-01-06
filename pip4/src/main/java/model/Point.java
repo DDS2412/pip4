@@ -29,7 +29,7 @@ public class Point implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "gen")
-    @SequenceGenerator(name = "gen", sequenceName = "shots_id_seq")
+    @SequenceGenerator(name = "gen", sequenceName = "points_id_seq")
     @Column(name = "id", nullable = false)
     public int getId() {
         return id;

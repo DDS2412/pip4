@@ -19,6 +19,7 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { RegisterComponent } from './register/register.component';
 import {CanvasComponent} from './components/canvas.component';
 import { HeaderComponent } from './header/header.component';
+import {ExitMainGuard} from './services/exit.main.guard';
 
 const appRoutes: Routes = [
   {
@@ -28,6 +29,7 @@ const appRoutes: Routes = [
   {
     path: 'mainpage',
     canActivate: [AuthguardGuard],
+    canDeactivate: [ExitMainGuard],
     component: MainpageComponent
   },
   {
@@ -48,7 +50,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes), CommonModule
   ],
   providers: [UserService, PointServiceService,
-              AuthguardGuard],
+              AuthguardGuard, ExitMainGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

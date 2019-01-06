@@ -1,10 +1,10 @@
 package controllers;
 
+import entities.AddPointRequest;
 import model.Point;
 import services.PointService;
 
 import javax.ejb.Singleton;
-import javax.ejb.Stateful;
 import javax.inject.Inject;
 import javax.json.Json;
 import javax.json.JsonArray;
@@ -22,7 +22,7 @@ public class PointController {
     @Path("/all")
     @GET
     @Produces({MediaType.APPLICATION_JSON})
-    public Response getAll(){
+    public Response getAll(@QueryParam("login") String login){
 
         return Response.
                 status(200).
@@ -32,16 +32,15 @@ public class PointController {
     }
 
     @Path("/add")
-    @GET
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response addNewPoint(@QueryParam("x") double x,
-                                @QueryParam("y") double y,
-                                @QueryParam("r") double r){
+    public Response addNewPoint(AddPointRequest body){
         try{
-            Point point = new Point(x, y, r);
+            Point point = body.getPoint();
             point.setHit(
                     checkPoint(point.getX(), point.getY(), point.getR()));
-            pointService.add(point);
+            pointService.add(point, body.getLogin());
             return Response.
                     status(200).
                     header("Access-Control-Allow-Origin", "*").

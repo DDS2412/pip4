@@ -5,6 +5,17 @@ canvas{
   margin: 20px;
 }
 
+.inp-label{
+  text-align: right;
+  clear: both;
+  float:left;
+  margin: 5px;
+}
+
+.form-div{
+  margin: 10px;
+}
+
 input.ng-touched.ng-invalid {border:solid red 2px;}
 input.ng-touched.ng-valid {border:solid green 2px;}
 

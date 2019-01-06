@@ -3,14 +3,13 @@ import {Point} from '../models/point';
 import {PointServiceService} from '../services/point-service.service';
 import {NgForm, NgModel} from '@angular/forms';
 
-;
 
 @Component({
   selector: 'canvas-comp',
   templateUrl :'./canvas.component.html',
   styleUrls: ['./../css/canvas.component.css']
 })
-export class CanvasComponent implements OnInit {
+export class CanvasComponent implements OnInit{
   x: string;
   numbers: string[] = ['-2','-1.5','-1','-0.5','0','0.5','1','1.5','2'];
   output: any[];
@@ -40,8 +39,6 @@ export class CanvasComponent implements OnInit {
   constructor(private pointService: PointServiceService) { }
 
   ngOnInit() {
-    this.getAllPoints();
-
     this.newPoint = new Point();
     this.newPoint.r = 1;
 
@@ -53,14 +50,15 @@ export class CanvasComponent implements OnInit {
     canvasEl.width = this.width;
     canvasEl.height = this.height;
 
-    this.draw(this.newPoint.r);
-    this.redrawAllPoints(this.newPoint.r);
+    this.getAllPoints();
   }
 
   getAllPoints(){
     this.pointService.getAllPoints().subscribe(
       data =>{
         this.points = data;
+        this.draw(this.newPoint.r);
+        this.redrawAllPoints(this.newPoint.r);
       });
   }
 
@@ -70,11 +68,12 @@ export class CanvasComponent implements OnInit {
     subscribe(
       data => {
         this.points = data;
+        this.drawPoint(point.x, point.y, point.isHit);
       });
   }
 
   rchange(r: number) {
-    var regexp = new RegExp('^[0-2]{1}((.){1}(0|5)?)?\\s*$');
+    var regexp = new RegExp('^[1-2]{1}((\\.){1}(0|5)?)?\\s*$|^(0\\.5)\\s*$');
     if(!regexp.test(r.toString())) {
       r = 1;
     }
@@ -88,8 +87,6 @@ export class CanvasComponent implements OnInit {
       let x = this.points[i].x;
       let y = this.points[i].y;
       let boolArea = this.checkColor(x, y, r);
-      x = x * 130 / r + 150;
-      y = 150 - y * 130 / r;
       this.drawPoint(x, y, boolArea);
     }
   }
@@ -125,9 +122,8 @@ export class CanvasComponent implements OnInit {
     this.senderPoint.x = this.senderPoint.r * (x - 150) / 130;
     this.senderPoint.y = this.senderPoint.r * (150 - y) / 130;
 
-    let boolArea = this.isArea(this.senderPoint.x, this.senderPoint.y, this.senderPoint.r);
+    this.senderPoint.isHit = this.isArea(this.senderPoint.x, this.senderPoint.y, this.senderPoint.r);
     this.addNewPoint(this.senderPoint);
-    this.drawPoint(x, y, boolArea);
   }
 
   public draw(r: number) {
@@ -198,6 +194,8 @@ export class CanvasComponent implements OnInit {
   }
 
   public drawPoint(x: number, y: number, isArea: boolean){
+    x = x * 130 / this.newPoint.r + 150;
+    y = 150 - y * 130 / this.newPoint.r;
     this.context.beginPath();
     this.context.rect(x, y, 4, 4);
     this.context.closePath();

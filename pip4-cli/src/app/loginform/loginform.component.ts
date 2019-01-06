@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 
 import {UserService} from '../user.service';
+import {UserResponse} from '../models/userResponse';
+import {ApiService} from '../services/api.service';
 
 @Component({
   selector: 'app-loginform',
@@ -9,28 +11,30 @@ import {UserService} from '../user.service';
   styleUrls: ['./loginform.component.css']
 })
 export class LoginformComponent implements OnInit {
-  errorMsg: string;
+  logStatus: UserResponse;
 
-  constructor(private router:Router, private user:UserService) { }
+  constructor(private router: Router,
+              private user: UserService,
+              private api: ApiService) { }
 
   ngOnInit() {
+    this.logStatus = new UserResponse();
   }
 
   loginUser(e) {
-    var username = e.target.elements[0].value;
-    var password = e.target.elements[1].value;
+    const username = e.target.elements[0].value;
+    const password = e.target.elements[1].value;
+    this.api.
+      login(username, password).
+        subscribe(
+        data => {
+        this.logStatus = data;
+        if (this.logStatus.success) {
+            this.user.setUserLoggedIn(username);
+            this.router.navigate(['mainpage']);
+          }
 
-    // TODO Доделать проверку с сервером
-    if(username === 'admin' && password === 'admin') {
-      this.user.setUserLoggedIn();
-      this.errorMsg = '';
-      this.router.navigate(['mainpage']);
-    }  else {
-      this.errorMsg = 'Вы ввели некорректное сочетание логина и пароля';
-      return false;
-    }
-
-    return true;
+          return this.logStatus.success;
+      });
   }
-
 }

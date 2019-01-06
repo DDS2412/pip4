@@ -39,14 +39,15 @@
                 <input type="password" required placeholder="Пароль">
               </div>
               <div class="w-100"></div>
-              <div class="col">
-                <div class="error-msg">
-                  <label>{{errorMsg}}</label>
-                </div>
-              </div>
+                <div *ngIf="logStatus.message == null; else msg"></div>
+                <ng-template #msg>
+                  <div class="col" style="margin-top: 10px; text-align: center" [hidden]="logStatus.success">
+                    <label class="alert alert-danger">{{logStatus.message}}</label>
+                  </div>
+                </ng-template>
             </div>
             <div class="row">
-              <div class="col" style="align-content: center; text-align: center">
+              <div class="col" style="align-content: center; text-align: center; margin-top: 10px;">
                 <input type="submit" value="Войти">
               </div>
               <div class="w-100"></div>

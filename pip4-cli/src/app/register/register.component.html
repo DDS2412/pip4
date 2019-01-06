@@ -40,6 +40,17 @@
               </div>
             </div>
             <div class="row">
+              <div *ngIf="regStatus.message == null; else msg"></div>
+              <ng-template #msg>
+                <div class="col" style="margin-top: 10px; text-align: center" [hidden]="!regStatus.success">
+                  <label class="alert alert-success">{{regStatus.message}}</label>
+                </div>
+                <div class="col" style="margin-top: 10px; text-align: center" [hidden]="regStatus.success">
+                  <label class="alert alert-danger">{{regStatus.message}}</label>
+                </div>
+              </ng-template>
+
+              <div class="w-100"></div>
               <div class="col">
                 <input [disabled]="registerform.invalid" class="reg-btn" type="submit" value="Зарегистрироваться">
               </div>
