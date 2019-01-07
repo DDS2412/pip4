@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!--тестовая версия для локального сервера-->
+        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@127.0.0.1:8010:orbis</property>
+        <property name="hibernate.connection.password">qbg078</property>
+        <property name="hibernate.connection.username">s242193</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+        <property name="show_sql">true</property>
+        <property name="hbm2ddl.auto">create</property>
+        <mapping resource="model/User.cfg.xml"/>
+        <mapping resource="model/Point.cfg.xml"/>
+
+
+        <!--рабочая версия для хелиоса-->
+        <!--<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@127.0.0.1:1521:orbis</property>
+        <property name="hibernate.connection.password">qbg078</property>
+        <property name="hibernate.connection.username">s242193</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+        <property name="show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping class="model.Point"/>
+        <mapping class="model.User"/>-->
+    </session-factory>
+</hibernate-configuration>

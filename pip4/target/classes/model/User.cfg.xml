@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="model.User" table="USERS">
+        <id name="username" type="string">
+            <column name="USERNAME" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="passwordHash" type="string">
+            <column name="PASSWORD_HASH" not-null="true" />
+        </property>
+        <property name="createdDate" type="date">
+            <column name="CREATED_DATE" length="7" not-null="true" />
+        </property>
+        <set name="points">
+            <key>
+                <column name="LOGIN"></column>
+            </key>
+            <one-to-many class="model.Point"/>
+        </set>
+    </class>
+</hibernate-mapping>

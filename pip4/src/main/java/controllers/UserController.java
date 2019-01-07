@@ -1,16 +1,30 @@
 package controllers;
 
-import entities.*;
+import entities.LoginRequest;
+import entities.LoginResponse;
+import entities.RegisterRequest;
+import entities.RegisterResponse;
 import model.User;
+import services.PointService;
+import services.UserService;
 import utils.PasswordHashing;
 
-import javax.ws.rs.*;
+import javax.ejb.EJB;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.Date;
 
 @Path("/users")
 public class UserController {
+    @EJB
+    private PointService pointService;
+    @EJB
+    private UserService userService;
+
     @Path("/register")
     @POST
     @Produces(MediaType.APPLICATION_JSON)
@@ -25,14 +39,20 @@ public class UserController {
         RegisterResponse response = new RegisterResponse();
 
         try{
-            // TODO Работа с бд
-            response.setSuccess(true);
-            response.setMessage("Регистрация успешно выполнена!");
+            if(userService.checkUserWithLogin(user.getUsername())){
+                userService.saveUser(user);
+                response.setSuccess(true);
+                response.setMessage("Регистрация успешно выполнена!");
+            }
+            else {
+                response.setSuccess(false);
+                response.setMessage("Пользователь с таким логином уже существует!");
+            }
         }
         catch (Exception e){
             response.setSuccess(false);
-            response.setMessage("Регистрация не выполнена!");
-            return Response.status(500).
+            response.setMessage(e.getMessage());
+            return Response.status(200).
                     header("Access-Control-Allow-Origin", "*").
                     entity(response).
                     build();
@@ -51,8 +71,7 @@ public class UserController {
 
         LoginResponse response = new LoginResponse();
         try {
-            // TODO Работа с бд
-            if(user.getLogin().equals("admin") && user.getPassword().equals("admin")) {
+            if(userService.checkPassword(user)) {
                 response.setSuccess(true);
             }
             else{
@@ -69,7 +88,7 @@ public class UserController {
             response.setSuccess(false);
 
             response.setMessage(e.getMessage());
-            return  Response.status(500).
+            return  Response.status(200).
                     header("Access-Control-Allow-Origin", "*").
                     entity(response).
                     build();

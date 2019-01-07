@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04636d1e-168f-4969-b7d6-42937e91358c" name="Default Changelist" comment="" />
+    <list default="true" id="2920dd40-31b6-4a0a-86aa-921198aac514" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,128 +14,101 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/pip4$All_Features_in__META_INF.ic" NAME="All Features in: META-INF Coverage Results" MODIFIED="1546432792110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>cucumber.api.cli.*</FILTER>
-    </SUITE>
-  </component>
-  <component name="CoverageViewManager">
-    <option name="myElementSize" value="240" />
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@127.0.0.1 [2]" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@127.0.0.1 [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="S242193: schema" type="ac44c5e0:OracleImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@127.0.0.1 [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="S242193: schema" type="ac44c5e0:OracleImplModel$Schema" />
+        <item name="POINTS: table" type="be4db629:OracleImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@127.0.0.1 [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="S242193: schema" type="ac44c5e0:OracleImplModel$Schema" />
+        <item name="USERS: table" type="be4db629:OracleImplModel$Table" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1852527104">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="1004" />
-          <entry key="xml" value="108" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="1004" />
-          <entry key="XML" value="108" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="fxml" value="1" />
-          <entry key="java" value="4" />
-          <entry key="xml" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="4" />
-          <entry key="XML" value="3" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="1130731788">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.18" value="1" />
-          <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.29" value="1" />
-          <entry key="project.open.time.30" value="1" />
-          <entry key="project.open.time.36" value="1" />
-          <entry key="project.open.time.37" value="1" />
-          <entry key="project.open.time.39" value="1" />
-          <entry key="project.open.time.40" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="27" />
-          <entry key="xml" value="2" />
+          <entry key="HIBERNATE_SEQUENCE" value="1" />
+          <entry key="LAB_USER" value="1" />
+          <entry key="POINTS_ID_SEQ" value="1" />
+          <entry key="SCHEMA:S242193" value="1" />
+          <entry key="USERS_ID_SEQ" value="1" />
+          <entry key="java" value="36" />
+          <entry key="sql" value="2" />
+          <entry key="xml" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="27" />
-          <entry key="XML" value="2" />
+          <entry key="Database Element" value="1" />
+          <entry key="JAVA" value="36" />
+          <entry key="SQL" value="3" />
+          <entry key="Scratch" value="2" />
+          <entry key="UML" value="1" />
+          <entry key="XML" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2021" />
-          <entry key="xml" value="54" />
+          <entry key="java" value="1587" />
+          <entry key="xml" value="393" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2021" />
-          <entry key="XML" value="54" />
+          <entry key="JAVA" value="1587" />
+          <entry key="XML" value="393" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controllers/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="41" column="34" lean-forward="true" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entities/LoginRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/PointController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="42" column="51" lean-forward="true" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+            <state relative-caret-position="1065">
+              <caret line="71" selection-start-line="71" selection-end-line="71" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#getPointsInJSON#0;class#PointController#0" />
+                <element signature="method#convertPointsInJSON#0;class#PointController#0" />
                 <element signature="method#checkPoint#0;class#PointController#0" />
+                <element signature="method#getPointsByLogin#0;class#PointController#0" />
               </folding>
             </state>
           </provider>
@@ -144,50 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/services/PointService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="e#436#437#0" expanded="true" />
-                <element signature="e#483#484#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entities/AddPointRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#205#206#0" expanded="true" />
-                <element signature="e#233#234#0" expanded="true" />
-                <element signature="e#274#275#0" expanded="true" />
-                <element signature="e#308#309#0" expanded="true" />
-                <element signature="e#340#341#0" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
-                <element signature="e#410#411#0" expanded="true" />
-                <element signature="e#444#445#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entities/LoginResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Point.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+            <state relative-caret-position="420">
+              <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,52 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entities/UserResponse.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="26" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="26" />
-              <folding>
-                <element signature="e#136#137#0" expanded="true" />
-                <element signature="e#166#167#0" expanded="true" />
-                <element signature="e#213#214#0" expanded="true" />
-                <element signature="e#251#252#0" expanded="true" />
-                <element signature="e#285#286#0" expanded="true" />
-                <element signature="e#315#316#0" expanded="true" />
-                <element signature="e#361#362#0" expanded="true" />
-                <element signature="e#399#400#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/PasswordHashing.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entities/UserRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="24" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="24" />
-              <folding>
-                <element signature="e#131#132#0" expanded="true" />
-                <element signature="e#159#160#0" expanded="true" />
-                <element signature="e#201#202#0" expanded="true" />
-                <element signature="e#235#236#0" expanded="true" />
-                <element signature="e#270#271#0" expanded="true" />
-                <element signature="e#301#302#0" expanded="true" />
-                <element signature="e#349#350#0" expanded="true" />
-                <element signature="e#389#390#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="315">
+              <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -250,41 +140,34 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
-        <option value="cdi.beans_1_1" />
         <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/services/services/PointController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/UserRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/RegisterRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/UserResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/RegisterResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/airhacks/JAXRSConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/airhacks/Ping.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/AddPointRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/PasswordHashing.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Point.hbn.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/model/user.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/model/User.hbn.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/PointController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Point.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/model/User.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/model/Point.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/web.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/AccessControlResponseFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/CORSFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/MethodRedirect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/FilterCORSResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/LoginRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/LoginResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/PasswordHashing.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/HibernateUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/services/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/AddPointRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/PointController.java" />
         <option value="$PROJECT_DIR$/src/main/java/services/PointService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
       </list>
     </option>
   </component>
@@ -301,6 +184,13 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="MavenProjectNavigator">
     <treeState>
       <expand>
@@ -308,23 +198,26 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="pip4" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="pip4" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="454" />
     <option name="width" value="1260" />
     <option name="height" value="958" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -364,14 +257,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pip4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pip4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -402,27 +287,54 @@
               <item name="pip4" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pip4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pip4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pip4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="oracle" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546800996159" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546889106964" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="utils" />
+      <recent name="controllers" />
+      <recent name="services" />
+      <recent name="entities" />
+      <recent name="model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/target/classes/model" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -437,10 +349,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="pip4" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 4.1.0" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
+    <configuration name="pip4" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.0" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="pip4:war exploded">
@@ -516,85 +425,60 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="04636d1e-168f-4969-b7d6-42937e91358c" name="Default Changelist" comment="" />
-      <created>1546432343877</created>
+      <changelist id="2920dd40-31b6-4a0a-86aa-921198aac514" name="Default Changelist" comment="" />
+      <created>1546871907999</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1546432343877</updated>
-      <workItem from="1546432347116" duration="1403000" />
-      <workItem from="1546435597336" duration="4017000" />
-      <workItem from="1546439922066" duration="4078000" />
-      <workItem from="1546445053557" duration="2680000" />
-      <workItem from="1546451772282" duration="3654000" />
-      <workItem from="1546466245900" duration="4840000" />
-      <workItem from="1546598387941" duration="4889000" />
-      <workItem from="1546637621248" duration="3867000" />
-      <workItem from="1546646314707" duration="720000" />
-      <workItem from="1546647142360" duration="1581000" />
-      <workItem from="1546648783674" duration="4423000" />
-      <workItem from="1546695564215" duration="312000" />
-      <workItem from="1546713831397" duration="9174000" />
-      <workItem from="1546787047052" duration="4003000" />
-      <workItem from="1546792914272" duration="4397000" />
+      <updated>1546871907999</updated>
+      <workItem from="1546871912260" duration="10279000" />
+      <workItem from="1546883883896" duration="5235000" />
+      <workItem from="1546889665854" duration="14000" />
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="All_Features_in__META-INF - 2019.01.02 at 15h 39m 52s.xml">
-      <configuration name="All Features in: META-INF" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54038000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="15528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28175026" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25506938" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
+      <window_info id="Persistence" order="2" side_tool="true" />
+      <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Image Layers" order="7" />
+      <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28795812" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32984293" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32984293" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32984293" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32984293" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32984293" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32984293" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32984293" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32984293" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32984293" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32984293" />
+      <window_info anchor="bottom" id="Database Changes" order="13" weight="0.32984293" />
+      <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Coverage" order="4" sideWeight="0.5015625" side_tool="true" weight="0.32977587" />
+      <window_info anchor="right" id="JSF" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="JSF" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" sideWeight="0.4984375" weight="0.32977587" />
-      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="CDI" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32977587" />
+      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.32977587" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info anchor="right" id="CDI" order="11" />
-      <window_info anchor="right" id="Bean Validation" order="12" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,53 +487,49 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/.." />
-    </ignored-roots>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controllers/PointController.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controllers/PointController.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/beans.xml.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/airhacks/JAXRSConfiguration.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/airhacks/Ping.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/AddPointRequest.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/web.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/AccessControlResponseFilter.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/CORSFilter.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/LoginRequest.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/MethodRedirect.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/LoginResponse.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entities/RegisterRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entities/RegisterResponse.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/UserRequest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/UserResponse.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -660,128 +540,166 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/UserResponse.java">
+    <entry file="das://75b8cf8b-6fe5-484d-9e03-dafb5289ad94/schema/S242193/sequence/HIBERNATE_SEQUENCE" />
+    <entry file="das://75b8cf8b-6fe5-484d-9e03-dafb5289ad94/schema/S242193/sequence/USERS_ID_SEQ" />
+    <entry file="das://75b8cf8b-6fe5-484d-9e03-dafb5289ad94/schema/S242193/sequence/POINTS_ID_SEQ" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/75b8cf8b-6fe5-484d-9e03-dafb5289ad94/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://75b8cf8b-6fe5-484d-9e03-dafb5289ad94/schema/S242193/table/LAB_USER" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/user.cfg.xml" />
+    <entry file="uml://DATABASE/38b0e046-a534-4501-8368-17417bef6ada.SCHEMA:S242193">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>38b0e046-a534-4501-8368-17417bef6ada.SCHEMA:S242193</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="394.0" y="293.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="26" />
-          <folding>
-            <element signature="e#136#137#0" expanded="true" />
-            <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#315#316#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/38b0e046-a534-4501-8368-17417bef6ada/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/persistence.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/PasswordHashing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="582">
+          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Point.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Point.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/LoginRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/LoginResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/UserRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="24" />
-          <folding>
-            <element signature="e#131#132#0" expanded="true" />
-            <element signature="e#159#160#0" expanded="true" />
-            <element signature="e#201#202#0" expanded="true" />
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#270#271#0" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/AddPointRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#205#206#0" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#274#275#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
+            <element signature="e#1201#1202#0" expanded="true" />
+            <element signature="e#1239#1240#0" expanded="true" />
+            <element signature="e#1271#1272#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/PointService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="270">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
           <folding>
-            <element signature="e#436#437#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
             <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+            <element signature="e#855#856#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+            <element signature="e#939#940#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/PointController.java">
+    <entry file="file://$PROJECT_DIR$/target/classes/model/Point.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/model/User.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/HibernateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="42" column="51" lean-forward="true" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+        <state relative-caret-position="240">
+          <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getPointsInJSON#0;class#PointController#0" />
-            <element signature="method#checkPoint#0;class#PointController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/User.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="36" column="37" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
+            <element signature="e#899#900#0" expanded="true" />
+            <element signature="e#953#954#0" expanded="true" />
+            <element signature="e#984#985#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="41" column="34" lean-forward="true" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+        <state relative-caret-position="301">
+          <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/PointController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#convertPointsInJSON#0;class#PointController#0" />
+            <element signature="method#checkPoint#0;class#PointController#0" />
+            <element signature="method#getPointsByLogin#0;class#PointController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/services/PointService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -791,7 +709,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>pip4:war exploded</last-edited>
+          <last-edited>pip4:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -804,7 +722,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web</last-edited>
+          <last-edited>Hibernate</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -844,7 +762,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -852,7 +769,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: com.sun.mail:javax.mail:1.6.0</last-edited>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -1,25 +1,33 @@
 package services;
 
 import model.Point;
+import org.hibernate.Session;
+import utils.HibernateUtil;
 
-import javax.ejb.Stateful;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
+import javax.ejb.Singleton;
 import java.util.ArrayList;
 import java.util.List;
 
-@Stateful
+@Singleton
 public class PointService {
-    List<Point> points = new ArrayList();
-
-    @PersistenceContext
-    private EntityManager em;
-
-    public List<Point> getAll(){
-        return points;
+    private final Session session;
+    public PointService(){
+        session = HibernateUtil.getSessionFactory().openSession();
     }
 
-    public void add(Point point, String login) {
-        points.add(point.roundValues());
+    public List<Point> getPointsByLogin(String login){
+        return (List<Point>) session.
+                createQuery("from model.Point where login = :login").
+                setParameter("login", login).
+                list();
+    }
+
+    List<Point> points = new ArrayList();
+
+    public void addNewPoint(Point point) {
+
+        session.getTransaction().begin();
+        session.save(point);
+        session.getTransaction().commit();
     }
 }

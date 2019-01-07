@@ -4,7 +4,7 @@ import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
 import java.security.SecureRandom;
-import javax.xml.bind.DatatypeConverter;
+import java.util.Base64;
 
 public class PasswordHashing {
     private static final int iterations = 20 * 1000;
@@ -19,7 +19,7 @@ public class PasswordHashing {
     public static String getSaltedHash(String password) throws Exception {
         byte[] salt = SecureRandom.getInstance("SHA1PRNG").generateSeed(saltLen);
         // store the salt with the password
-        return DatatypeConverter.printBase64Binary(salt) + "$" + hash(password, salt);
+        return Base64.getEncoder().encodeToString(salt) + "$" + hash(password, salt);
     }
 
     /**
@@ -32,7 +32,7 @@ public class PasswordHashing {
             throw new IllegalStateException(
                     "The stored password must have the form 'salt$hash'");
         }
-        String hashOfInput = hash(password,  DatatypeConverter.parseBase64Binary(saltAndHash[0]));
+        String hashOfInput = hash(password, Base64.getDecoder().decode(saltAndHash[0]));
         return hashOfInput.equals(saltAndHash[1]);
     }
 
@@ -47,6 +47,6 @@ public class PasswordHashing {
                         password.toCharArray(), salt, iterations, desiredKeyLen
                 )
         );
-        return DatatypeConverter.printBase64Binary(key.getEncoded());
+        return Base64.getEncoder().encodeToString(key.getEncoded());
     }
 }

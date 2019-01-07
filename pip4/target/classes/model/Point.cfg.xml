@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="model.Point" table="POINTS">
+        <id name="id" type="int">
+            <column name="ID"/>
+            <generator class="increment"/>
+        </id>
+        <property name="x" type="double">
+            <column name="X" not-null="true"  />
+        </property>
+        <property name="y" type="double">
+            <column name="Y" not-null="true"  />
+        </property>
+        <property name="r" type="double">
+            <column name="R" not-null="true"  />
+        </property>
+        <property name="checked" type="boolean">
+            <column name="CHECKED" not-null="true" />
+        </property>
+        <many-to-one name="user" class="model.User">
+            <column name="LOGIN" not-null="true"/>
+        </many-to-one>
+    </class>
+</hibernate-mapping>
